@@ -13,7 +13,7 @@ class TodoScreen extends HookConsumerWidget {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       appBar: AppBar(
-        elevation: 0;
+        elevation: 0,
       ),
       drawer: Drawer(
         child: ListView(
@@ -113,7 +113,7 @@ class TodoScreen extends HookConsumerWidget {
         },
         onDismissed: (direction) {
           _listKey.currentState?.removeItem(index, (context, animation) => const SizedBox(width: 0, height: 0));
-          todoModel.deleteTodo(id)
+          todoModel.deleteTodo(id);
         },
         child: ListTile(
           leading: Checkbox(
